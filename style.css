@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.warning {
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-size: 14.5px;
+  padding: 0.85em;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  width: 90%;
+  padding: 0.75em;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:nth-child(2) a {
+  padding: 0 0.5em;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+.nav-link img {
+  vertical-align: middle;
+}
+
+.banner {
+  width: 100%;
+  height: 70vh;
+  background-image: url("/assets/pizza-banner.jpg");
+  background-size: cover;
+
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.banner-text {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+
+  font-size: 2em;
+  color: brown;
+}
+
+.ordering {
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  width: 40%;
+  margin: auto;
+  transform: translateY(-50%);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.3);
+  padding: 1.5em;
+  z-index: 100;
+}
+
+.container h1 {
+  color: brown;
+  font-size: 20px;
+  padding-bottom: 0.5em;
+}
+
+.container h2 {
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 1.5em;
+  font-weight: bolder;
+}
+
+.container p {
+  font-size: 13px;
+  line-height: 1.8em;
+}
+
+form {
+  margin: 1em auto;
+  width: 100%;
+}
+
+form input,
+form button {
+  padding: 1em;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+
+form input {
+  width: 60%;
+  border: 1px solid lightgray;
+}
+
+form input::placeholder {
+  color: lightslategrey;
+}
+
+form button {
+  width: 40%;
+  background-color: green;
+  border: 1px solid green;
+  color: white;
+}
+
+.heading {
+  margin-bottom: 10px;
+}
+.heading h1 {
+  text-align: center;
+  margin: auto;
+  width: 97%;
+  position: relative;
+}
+
+.heading h1::after,
+.heading h1::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  width: 37%;
+  height: 0.5px;
+  background: white;
+  border: 0.25px solid lightgray;
+}
+
+.heading h1::before {
+  left: 0;
+  margin-right: 10px;
+}
+
+.heading h1::after {
+  right: 0;
+  margin-left: 10px;
+}
+
+.deals-container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.figure {
+  width: 50%;
+  margin: 15px 5px;
+}
+
+.figure img {
+  width: 100%;
+  margin: 0;
+}
+
+.figure p {
+  background-color: #574847;
+  color: white;
+  font-size: 9px;
+  text-align: center;
+  margin-top: -4px;
+}
+
+.deals button {
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  border: 1px solid green;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 1em;
+}
+
+.findstore {
+  margin: 40px auto 20px;
+}
+
+.findstore-container {
+  width: 85%;
+  margin: auto;
+  padding: 1em;
+  background: url("./assets/narrow-banner.jpg");
+}
+
+.dine-in {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  padding: 1em;
+
+  display: flex;
+  flex-direction: row;
+
+  border-radius: 5px;
+  background-color: white;
+}
+
+.dine-in p {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  flex: 1;
+  margin-right: 2%;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.dine-in button {
+  background-color: yellow;
+  flex: 1;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 3em;
+}
+footer table {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 3em;
+}
+
+footer table h1 {
+  font-size: 1em;
+  padding-bottom: 0.4em;
+}
+
+footer table p {
+  font-size: 0.6em;
+}
+
+.copyright {
+  font-size: 0.5em;
+  text-align: center;
+  color: lightslategrey;
+}
